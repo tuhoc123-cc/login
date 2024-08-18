@@ -1,0 +1,153 @@
+/* Import font từ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Áp dụng cho tất cả các phần tử */
+* {
+  box-sizing: border-box; /* Đặt mô hình box-sizing cho tất cả các phần tử */
+  margin: 0; /* Loại bỏ margin mặc định */
+  padding: 0; /* Loại bỏ padding mặc định */
+}
+
+/* Định dạng cho thẻ body */
+body {
+  font-family: "Poppins", sans-serif; /* Sử dụng font Poppins */
+  background: linear-gradient(rgba(31, 0, 116, 0.1), rgba(11, 0, 33, 0.6)),
+    /* Tạo gradient cho nền */ url(./img/anh1..jpg); /* Thêm ảnh nền Halloween */
+  height: 100vh; /* Chiều cao của body là 100% viewport height */
+  background-position: center; /* Đặt vị trí nền ở trung tâm */
+  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+  background-size: cover; /* Đặt kích thước nền để bao phủ toàn bộ */
+  display: flex; /* Sử dụng flexbox cho body */
+  align-items: center; /* Căn giữa các mục theo chiều dọc */
+  justify-content: center; /* Căn giữa các mục theo chiều ngang */
+  accent-color: #602bff; /* Đặt màu chính */
+}
+
+/* Định dạng cho các phần tử có class icon */
+.icon {
+  color: #fff; /* Màu trắng cho icon */
+}
+
+/* Định dạng cho form */
+.form {
+  width: 350px; /* Chiều rộng form */
+  height: 400px; /* Chiều cao form */
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 5px 5px 20px 5px rgba(10, 2, 34, 0.78); /* Đổ bóng */
+  backdrop-filter: blur(3px); /* Làm mờ nền phía sau */
+  border-radius: 20px; /* Bo góc thêm một lần nữa */
+}
+
+/* Định dạng cho thẻ h3 */
+h3 {
+  text-align: center; /* Căn giữa văn bản */
+  padding: 2rem 1rem; /* Padding trên dưới 2rem, trái phải 1rem */
+  color: #eee; /* Màu chữ */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+}
+
+/* Định dạng cho class username và password */
+.username,
+.password {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-around; /* Chia đều khoảng cách giữa các mục */
+  border-radius: 50px; /* Bo góc tròn */
+  align-items: center; /* Căn giữa các mục theo chiều dọc */
+  margin: 0 2.5rem 1rem 2.5rem; /* Margin trên dưới 1rem, trái phải 2.5rem */
+  outline: none; /* Bỏ viền mặc định */
+  border-style: none; /* Bỏ kiểu viền mặc định */
+  border: 1px solid #5f3dc4; /* Đặt viền màu tím */
+}
+
+/* Định dạng cho placeholder của input */
+input::placeholder {
+  color: #ddd; /* Màu placeholder */
+}
+
+/* Định dạng cho thẻ p */
+p {
+  color: #ddd; /* Màu chữ */
+}
+
+/* Định dạng cho class icon, trùng lặp ở đây */
+.icon {
+  padding-right: 0.5rem; /* Padding bên phải */
+  color: #ddd; /* Màu chữ */
+}
+
+/* Định dạng cho input */
+input {
+  padding: 0.75rem 1.5rem; /* Padding trên dưới 0.75rem, trái phải 1.5rem */
+  outline: none; /* Bỏ viền mặc định */
+  border-style: none; /* Bỏ kiểu viền mặc định */
+  background-color: transparent; /* Nền trong suốt */
+  color: #ddd; /* Màu chữ */
+}
+
+/* Định dạng cho class buttons */
+.buttons {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các mục */
+  padding: 0 3rem; /* Padding trái phải 3rem */
+  font-size: 0.75rem; /* Kích thước chữ nhỏ */
+  margin-bottom: 1rem; /* Margin dưới 1rem */
+}
+
+/* Định dạng cho class remember */
+.remember {
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn giữa các mục theo chiều dọc */
+}
+
+/* Định dạng cho class checkbox */
+.checkbox {
+  outline: none; /* Bỏ viền mặc định */
+  border-style: none; /* Bỏ kiểu viền mặc định */
+  margin-right: 0.25rem; /* Margin phải 0.25rem */
+  padding: 1rem; /* Padding 1rem */
+}
+
+/* Định dạng cho thẻ a */
+a {
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  color: #5f3dc4; /* Màu tím */
+  transition: all 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+/* Định dạng cho thẻ a khi hover */
+a:hover {
+  opacity: 0.8; /* Giảm độ trong suốt khi hover */
+}
+
+/* Định dạng cho class btn-box */
+.btn-box {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa */
+}
+
+/* Định dạng cho thẻ a trong btn-box */
+.btn-box a {
+  padding: 0.5rem 1.5rem; /* Padding trên dưới 0.5rem, trái phải 1.5rem */
+  border-radius: 50px; /* Bo góc tròn */
+  outline: none; /* Bỏ viền mặc định */
+  border-style: none; /* Bỏ kiểu viền mặc định */
+  width: 75%; /* Chiều rộng 75% */
+  cursor: pointer; /* Con trỏ dạng tay chỉ */
+  transition: all 0.5s; /* Hiệu ứng chuyển đổi */
+  background-color: #fff; /* Nền trắng */
+  text-align: center; /* Căn giữa văn bản */
+  color: #5f3dc4; /* Màu chữ tím */
+}
+
+/* Định dạng cho thẻ a trong btn-box khi hover */
+.btn-box a:hover {
+  opacity: 0.8; /* Giảm độ trong suốt khi hover */
+}
+
+/* Định dạng cho class register */
+.register {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa */
+  font-style: 0.75rem; /* Kích thước chữ nhỏ */
+  margin-top: 4rem; /* Margin trên 4rem */
+}
